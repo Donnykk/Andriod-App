@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_Learn"
-        android:name="com.example.project_1.ui.learn.LearnFragment"
-        android:label="学习"
-        tools:layout="@layout/fragment_learn" />
+        android:name="com.example.project_1.ui.primepage.PrimepageFragment"
+        android:label="首页"
+        tools:layout="@layout/fragment_primepage" />
 
     <fragment
         android:id="@+id/navigation_Find"

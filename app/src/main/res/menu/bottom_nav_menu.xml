@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/navigation_Learn"
-        android:icon="@drawable/ic_learn_black_24dp"
-        android:title="学习" />
+        android:icon="@drawable/ic_primepage_black_24dp"
+        android:title="首页" />
 
     <item
         android:id="@+id/navigation_Find"

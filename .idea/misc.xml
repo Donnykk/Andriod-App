@@ -6,6 +6,7 @@
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable-navexposed/ic_learn_black_24dp.xml" value="0.6458333333333334" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.28703703703703703" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable/delete_icon.xml" value="0.19074074074074074" />
+        <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable/devide_line.xml" value="0.2962962962962963" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.28703703703703703" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable/ic_find_black_24dp.xml" value="0.3148148148148148" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.28703703703703703" />
@@ -18,6 +19,7 @@
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_dashboard.xml" value="0.3070652173913043" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_find.xml" value="0.3070652173913043" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_home.xml" value="0.3070652173913043" />
+        <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_index.xml" value="0.27943840579710144" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_learn.xml" value="0.3333333333333333" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_learn_main.xml" value="0.28396739130434784" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/layout/fragment_learn_sort.xml" value="0.2871376811594203" />

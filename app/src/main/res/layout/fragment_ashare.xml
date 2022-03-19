@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.find.IndexFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:hint="请输入搜索内容"
+            app:layout_constraintEnd_toStartOf="@+id/bt1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#F0F0F0"
+            android:text="搜索"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/et1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b1"
+            android:backgroundTint="#F0F0F0"
+            android:text="大盘指数"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b2"
+            android:backgroundTint="#8470FF"
+            android:text="A股市场"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b3"
+            android:backgroundTint="#F0F0F0"
+            android:text="选股知识"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#8470FF"
+            android:text="股票排行"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="涨幅/跌幅"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b6"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="大单净量"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b7"
+            android:text="主力净流入"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="快速涨幅"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b9"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="量比"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b10"
+            android:text="总市值"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b11"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="成交额"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b12"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="换手率"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b13"
+            android:text="流通市值"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b14"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#8470FF"
+            android:text="市场概况"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b15"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#8470FF"
+            android:text="龙虎榜"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b16"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="一线游资"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b17"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="敢死队"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b18"
+            android:text="机构"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b19"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#8470FF"
+            android:text="资金流向"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b20"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="北向资金"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b21"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="大盘资金"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/divide_line"
+        android:showDividers="end">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b22"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="净买额"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/b23"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#E6E6FA"
+            android:text="净买入"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

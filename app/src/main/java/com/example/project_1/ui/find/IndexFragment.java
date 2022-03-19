@@ -18,8 +18,6 @@ public class IndexFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentIndexBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        Button b1 = binding.b2;
-
         return root;
     }
 

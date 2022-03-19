@@ -5,31 +5,36 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.project_1.R;
 import com.example.project_1.databinding.FragmentFindBinding;
 
 public class FindFragment extends Fragment {
     private FragmentFindBinding binding;
+    private EditText et1;
+    private Button bt1;
+    private TextView tv1;
+    private Button bt2;
+    private Button bt3;
+    private Button bt4;
+    private TextView tv2;
+    private Button bt5;
+    private Button bt6;
+    private Button bt7;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentFindBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        Button b2 = binding.bt2;
-        b2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                LinearLayout linearLayout = binding.find;
-                linearLayout.setVisibility(View.GONE);
-                getActivity().getSupportFragmentManager().
-                        beginTransaction().replace(R.id.nav_host_fragment_activity_main,new IndexFragment(),null)
-                        .addToBackStack(null).commit();
-            }
+
+        //事件处理
+        Button bt1 = binding.bt2;
+        bt1.setOnClickListener(v -> {
+
         });
         return root;
     }

@@ -15,11 +15,52 @@
         android:id="@+id/navigation_Find"
         android:name="com.example.project_1.ui.find.FindFragment"
         android:label="发现"
-        tools:layout="@layout/fragment_find" />
-
+        tools:layout="@layout/fragment_find">
+        <action
+            android:id="@+id/FindtoIndex"
+            app:destination="@id/fragment_index"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/FindtoAshare"
+            app:destination="@id/fragment_ashare"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/FindtoKnowledge"
+            app:destination="@id/fragment_knowledge"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/FindtoHistory"
+            app:destination="@id/fragment_history"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_Me"
         android:name="com.example.project_1.ui.me.MeFragment"
         android:label="我"
         tools:layout="@layout/fragment_me" />
+    <fragment
+        android:id="@+id/fragment_index"
+        android:name="com.example.project_1.ui.find.IndexFragment"
+        android:label="Index"
+        tools:layout="@layout/fragment_index" />
+    <fragment
+        android:id="@+id/fragment_ashare"
+        android:name="com.example.project_1.ui.find.AshareFragment"
+        android:label="Ashare"
+        tools:layout="@layout/fragment_ashare" />
+    <fragment
+        android:id="@+id/fragment_knowledge"
+        android:name="com.example.project_1.ui.find.KnowledgeFragment"
+        android:label="Knowledge"
+        tools:layout="@layout/fragment_knowledge" />
+    <fragment
+        android:id="@+id/fragment_history"
+        android:name="com.example.project_1.ui.find.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
 </navigation>

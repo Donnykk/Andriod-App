@@ -8,14 +8,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.project_1.databinding.FragmentHistoryBinding;
+import com.example.project_1.databinding.FragmentAshareBinding;
+import com.example.project_1.databinding.FragmentIndexBinding;
 
-public class HistoryFragment extends Fragment {
-    private FragmentHistoryBinding binding;
+public class AshareFragment extends Fragment {
+    private FragmentAshareBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentHistoryBinding.inflate(inflater, container, false);
+        binding = FragmentAshareBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         return root;
     }

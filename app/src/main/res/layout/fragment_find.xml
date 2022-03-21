@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/find"
+    android:id="@+id/fragment_find"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="—————基础知识讲解————————————————————————-"
+        android:text="     基础知识讲解"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -91,7 +91,7 @@
         android:id="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="—————金融历史事件——————————————————————-——"
+        android:text="     金融历史事件    "
         tools:ignore="MissingConstraints"
         android:layout_marginTop="10dp"/>
 

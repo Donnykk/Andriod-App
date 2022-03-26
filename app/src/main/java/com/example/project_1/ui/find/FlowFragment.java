@@ -29,8 +29,6 @@ public class FlowFragment extends Fragment {
     @SuppressLint("SetTextI18n")
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button bt1 = binding.bt2;
-        bt1.setOnClickListener(v-> Navigation.findNavController(getView()).navigate(R.id.FlowtoAshare));
 
         TextView tv1 = binding.tv1;
         TextView tv2 = binding.tv2;

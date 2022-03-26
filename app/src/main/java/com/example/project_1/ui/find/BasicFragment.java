@@ -26,8 +26,7 @@ public class BasicFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button bt1 = binding.bt2;
-        bt1.setOnClickListener(v-> Navigation.findNavController(getView()).navigate(R.id.BasictoKnowledge));
+
     }
 
     @Override

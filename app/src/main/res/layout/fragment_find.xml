@@ -141,5 +141,10 @@
                 app:layout_constraintTop_toTopOf="@+id/tv3"
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent" />
+
     </LinearLayout>
 </ScrollView>

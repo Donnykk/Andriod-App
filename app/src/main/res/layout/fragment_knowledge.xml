@@ -137,5 +137,10 @@
                 android:text="技术面"
                 android:textColor="@color/black" />
         </LinearLayout>
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent" />
+
     </LinearLayout>
 </ScrollView>

@@ -50,15 +50,10 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/bt2"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="back"
-                android:textColor="#B588CE"
-                android:textSize="20dp" />
+                android:layout_height="40dp"
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -137,5 +132,10 @@
                 android:gravity="left"
                 android:textColor="@color/white" />
         </LinearLayout>
+
+        <TextView
+            android:layout_height="70dp"
+            android:layout_width="match_parent" />
+
     </LinearLayout>
 </ScrollView>

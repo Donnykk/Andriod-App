@@ -12,24 +12,22 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
 import com.example.project_1.R;
-import com.example.project_1.databinding.FragmentIndexBinding;
+import com.example.project_1.databinding.FragmentBasicBinding;
 
-public class IndexFragment extends Fragment {
-    private FragmentIndexBinding binding;
+public class BasicFragment extends Fragment {
+    private FragmentBasicBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentIndexBinding.inflate(inflater, container, false);
+        binding = FragmentBasicBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         return root;
     }
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button bt1 = binding.b2;
-        bt1.setOnClickListener(v-> Navigation.findNavController(getView()).navigate(R.id.IndextoAshare));
-        Button bt2 = binding.b3;
-        bt2.setOnClickListener(v-> Navigation.findNavController(getView()).navigate(R.id.IndextoKnowledge));
+        Button bt1 = binding.bt2;
+        bt1.setOnClickListener(v-> Navigation.findNavController(getView()).navigate(R.id.BasictoKnowledge));
     }
 
     @Override

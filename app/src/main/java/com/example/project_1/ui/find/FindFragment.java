@@ -5,8 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,16 +16,6 @@ import com.example.project_1.databinding.FragmentFindBinding;
 
 public class FindFragment extends Fragment {
     private FragmentFindBinding binding;
-    private EditText et1;
-    private Button bt1;
-    private TextView tv1;
-    private Button bt2;
-    private Button bt3;
-    private Button bt4;
-    private TextView tv2;
-    private Button bt5;
-    private Button bt6;
-    private Button bt7;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -35,7 +23,6 @@ public class FindFragment extends Fragment {
         View root = binding.getRoot();
         return root;
     }
-
 
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -57,7 +44,6 @@ public class FindFragment extends Fragment {
         Button tulip_button = binding.bt7;
         tulip_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoHistory));
     }
-
 
     @Override
     public void onDestroyView() {

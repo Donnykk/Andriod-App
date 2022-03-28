@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/drawable/divide_line.xml" value="0.38229166666666664" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_ashare.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_basic.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_find.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_flow.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_history.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_index.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_knowledge.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_me.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_primepage.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_ranking.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/fragment_tiger.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android/project/iMoney/app/src/main/res/layout/testq1.xml" value="0.36614583333333334" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable-navexposed/ic_learn_black_24dp.xml" value="0.6458333333333334" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.28703703703703703" />
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/drawable/delete_icon.xml" value="0.19074074074074074" />

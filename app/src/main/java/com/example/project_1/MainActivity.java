@@ -1,5 +1,6 @@
 package com.example.project_1;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,11 +20,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        this.getSupportActionBar().hide();
+
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_PrimePage, R.id.navigation_Find, R.id.navigation_Me)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.fragment_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        Intent i=new Intent(MainActivity.this,LoginActivity.class);
+        startActivity(i);
     }
 }

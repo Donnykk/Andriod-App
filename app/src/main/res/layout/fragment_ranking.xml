@@ -92,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#BAA5DD"
                 android:gravity="left"
                 android:textColor="@color/white" />
@@ -102,6 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#E6E6FA"
                 android:gravity="left"
                 android:textColor="@color/black" />
@@ -130,7 +132,8 @@
                 android:layout_marginTop="5dp"
                 android:background="#BAA5DD"
                 android:gravity="left"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"/>
 
             <TextView
                 android:id="@+id/tv4"
@@ -140,7 +143,8 @@
                 android:layout_marginTop="5dp"
                 android:background="#E6E6FA"
                 android:gravity="left"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
         </LinearLayout>
 
         <TextView
@@ -166,7 +170,8 @@
                 android:layout_marginTop="5dp"
                 android:background="#BAA5DD"
                 android:gravity="left"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"/>
 
             <TextView
                 android:id="@+id/tv6"
@@ -176,7 +181,8 @@
                 android:layout_marginTop="5dp"
                 android:background="#E6E6FA"
                 android:gravity="left"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
         </LinearLayout>
 
         <TextView

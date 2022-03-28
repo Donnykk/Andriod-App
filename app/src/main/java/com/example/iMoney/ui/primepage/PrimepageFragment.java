@@ -1,4 +1,4 @@
-package com.example.project_1.ui.primepage;
+package com.example.iMoney.ui.primepage;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.project_1.R;
-import com.example.project_1.TestActivity;
-import com.example.project_1.databinding.FragmentPrimepageBinding;
+import com.example.iMoney.R;
+import com.example.iMoney.TestActivity;
+import com.example.iMoney.databinding.FragmentPrimepageBinding;
 
 public class PrimepageFragment extends Fragment {
 

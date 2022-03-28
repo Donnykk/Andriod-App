@@ -1,4 +1,4 @@
-package com.example.project_1;
+package com.example.iMoney;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.project_1.databinding.ActivityMainBinding;
+import com.example.iMoney.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

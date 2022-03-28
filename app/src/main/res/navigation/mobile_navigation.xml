@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_PrimePage"
-        android:name="com.example.project_1.ui.primepage.PrimepageFragment"
+        android:name="com.example.iMoney.ui.primepage.PrimepageFragment"
         android:label="首页"
         tools:layout="@layout/fragment_primepage" />
 
     <fragment
         android:id="@+id/navigation_Find"
-        android:name="com.example.project_1.ui.find.FindFragment"
+        android:name="com.example.iMoney.ui.find.FindFragment"
         android:label="发现"
         tools:layout="@layout/fragment_find">
         <action
@@ -40,13 +40,13 @@
 
     <fragment
         android:id="@+id/navigation_Me"
-        android:name="com.example.project_1.ui.me.MeFragment"
+        android:name="com.example.iMoney.ui.me.MeFragment"
         android:label="我"
         tools:layout="@layout/fragment_me" />
 
     <fragment
         android:id="@+id/fragment_index"
-        android:name="com.example.project_1.ui.find.IndexFragment"
+        android:name="com.example.iMoney.ui.find.IndexFragment"
         android:label="Index"
         tools:layout="@layout/fragment_index" >
         <action
@@ -63,7 +63,7 @@
 
     <fragment
         android:id="@+id/fragment_ashare"
-        android:name="com.example.project_1.ui.find.AshareFragment"
+        android:name="com.example.iMoney.ui.find.AshareFragment"
         android:label="A股市场"
         tools:layout="@layout/fragment_ashare">
         <action
@@ -95,7 +95,7 @@
 
     <fragment
         android:id="@+id/fragment_knowledge"
-        android:name="com.example.project_1.ui.find.KnowledgeFragment"
+        android:name="com.example.iMoney.ui.find.KnowledgeFragment"
         android:label="选股知识"
         tools:layout="@layout/fragment_knowledge" >
         <action
@@ -117,13 +117,13 @@
 
     <fragment
         android:id="@+id/fragment_history"
-        android:name="com.example.project_1.ui.find.HistoryFragment"
+        android:name="com.example.iMoney.ui.find.HistoryFragment"
         android:label="历史事件"
         tools:layout="@layout/fragment_history" />
 
     <fragment
         android:id="@+id/fragment_ranking"
-        android:name="com.example.project_1.ui.find.RankingFragment"
+        android:name="com.example.iMoney.ui.find.RankingFragment"
         android:label="股票排行"
         tools:layout="@layout/fragment_ranking">
         <action
@@ -135,7 +135,7 @@
 
     <fragment
         android:id="@+id/fragment_flow"
-        android:name="com.example.project_1.ui.find.FlowFragment"
+        android:name="com.example.iMoney.ui.find.FlowFragment"
         android:label="资金流向"
         tools:layout="@layout/fragment_flow">
         <action
@@ -147,7 +147,7 @@
 
     <fragment
         android:id="@+id/fragment_tiger"
-        android:name="com.example.project_1.ui.find.TigerFragment"
+        android:name="com.example.iMoney.ui.find.TigerFragment"
         android:label="龙虎榜"
         tools:layout="@layout/fragment_tiger">
         <action
@@ -159,7 +159,7 @@
 
     <fragment
         android:id="@+id/fragment_basic"
-        android:name="com.example.project_1.ui.find.BasicFragment"
+        android:name="com.example.iMoney.ui.find.BasicFragment"
         android:label="基本面"
         tools:layout="@layout/fragment_basic">
         <action

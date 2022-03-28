@@ -1,4 +1,4 @@
-package com.example.project_1.ui.find;
+package com.example.iMoney.ui.me;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.project_1.databinding.FragmentHistoryBinding;
+import com.example.iMoney.databinding.FragmentMeBinding;
 
-public class HistoryFragment extends Fragment {
-    private FragmentHistoryBinding binding;
+public class MeFragment extends Fragment {
+    private FragmentMeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentHistoryBinding.inflate(inflater, container, false);
+        binding = FragmentMeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         return root;
     }

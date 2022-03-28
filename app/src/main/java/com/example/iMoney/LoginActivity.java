@@ -1,4 +1,4 @@
-package com.example.project_1;
+package com.example.iMoney;
 
 import android.os.Bundle;
 import android.widget.Button;

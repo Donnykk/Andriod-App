@@ -1,4 +1,4 @@
-package com.example.project_1.ui.find;
+package com.example.iMoney.ui.find;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.example.project_1.R;
-import com.example.project_1.databinding.FragmentAshareBinding;
+import com.example.iMoney.R;
+import com.example.iMoney.databinding.FragmentAshareBinding;
 
 public class AshareFragment extends Fragment {
     private FragmentAshareBinding binding;

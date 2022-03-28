@@ -1,20 +1,17 @@
-package com.example.project_1.ui.find;
+package com.example.iMoney.ui.find;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
-import com.example.project_1.R;
-import com.example.project_1.databinding.FragmentTigerBinding;
+import com.example.iMoney.databinding.FragmentTigerBinding;
 
 public class TigerFragment extends Fragment {
     private FragmentTigerBinding binding;

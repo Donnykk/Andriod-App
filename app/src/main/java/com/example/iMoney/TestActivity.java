@@ -1,4 +1,4 @@
-package com.example.project_1;
+package com.example.iMoney;
 
 import android.app.Activity;
 import android.app.FragmentManager;

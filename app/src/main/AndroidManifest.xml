@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project_1">
+    package="com.example.iMoney">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="菜菜i财"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_1">
+        android:theme="@style/Theme.iMoney">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.iMoney.MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="iMoney">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestActivity">
+        <activity android:name="com.example.iMoney.TestActivity">
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.example.iMoney.LoginActivity">
         </activity>
     </application>
 

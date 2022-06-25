@@ -54,6 +54,7 @@
             />
 
         <EditText
+            android:id="@+id/phone"
             android:layout_width="234dp"
             android:layout_height="48dp"
             android:layout_gravity="right"
@@ -64,7 +65,7 @@
             />
 
         <EditText
-            android:id="@+id/loginedit2"
+            android:id="@+id/password"
             android:layout_width="306dp"
             android:layout_height="53dp"
             android:layout_gravity="center_horizontal"

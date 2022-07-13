@@ -116,4 +116,37 @@ public class ServerDatabase {
             e.printStackTrace();
         }
     }
+
+    public static void main(String[] args) {
+        ServerDatabase h = new ServerDatabase();
+        h.connectSQL();
+        String select = "select * from userdata where _id="
+                + "'w'" + " and password="
+                + "'w'" + ";";
+        ResultSet resultSet = h.selectSQL(select);
+        h.layoutStyle2(resultSet);//调试信息
+        String s = "select * from userdata";
+
+        String insert = "insert into userdata(_id,password) " +
+                "values('aaron','102938475610')";
+        String update = "update userdata set password ='123456789' where _id= 'aaron'";
+        String delete = "delete from userdata where _id= 'aaron'";
+
+        if (h.insertSQL(insert)) {
+            System.out.println("insert successfully");
+            resultSet = h.selectSQL(s);
+            h.layoutStyle2(resultSet);
+        }
+        if (h.updateSQL(update)) {
+            System.out.println("update successfully");
+            resultSet = h.selectSQL(s);
+            h.layoutStyle2(resultSet);
+        }
+        if (h.deleteSQL(delete)) {
+            System.out.println("delete successfully");
+            resultSet = h.selectSQL(s);
+            h.layoutStyle2(resultSet);
+        }
+        h.deconnectSQL();
+    }
 }

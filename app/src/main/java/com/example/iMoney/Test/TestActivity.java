@@ -1,4 +1,4 @@
-package com.example.iMoney;
+package com.example.iMoney.Test;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -6,10 +6,11 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.Button;
 
+import com.example.iMoney.R;
+
 
 public class TestActivity extends Activity{
 
-    private TestFragment1 q1;
     private TestFragment2 q2;
     private TestFragment3 q3;
     private Button q1b;
@@ -23,7 +24,7 @@ public class TestActivity extends Activity{
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
         FragmentManager fm=getFragmentManager();
         FragmentTransaction tr = fm.beginTransaction();
-        q1=new TestFragment1();
+        TestFragment1 q1 = new TestFragment1();
         tr.replace(R.id.testquest, q1);
         tr.commit();
 

@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.iMoney.R;
-import com.example.iMoney.TestActivity;
+import com.example.iMoney.Test.TestActivity;
 import com.example.iMoney.databinding.FragmentPrimepageBinding;
 
 public class PrimepageFragment extends Fragment {

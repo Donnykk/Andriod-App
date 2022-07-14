@@ -11,16 +11,16 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.iMoney.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+import java.util.Objects;
 
-    private ActivityMainBinding binding;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        com.example.iMoney.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        this.getSupportActionBar().hide();
+        Objects.requireNonNull(this.getSupportActionBar()).hide();
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_PrimePage, R.id.navigation_Find, R.id.navigation_Me)

@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.iMoney.TestActivity">
+        <activity android:name="com.example.iMoney.Test.TestActivity">
         </activity>
         <activity android:name="com.example.iMoney.LoginActivity">
         </activity>

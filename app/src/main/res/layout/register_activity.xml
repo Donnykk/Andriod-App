@@ -6,12 +6,12 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/login1"
+        android:id="@+id/register1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
-        android:text="登录您的账户"
+        android:text="注册新用户"
         android:textColor="#101010"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -45,7 +45,7 @@
             android:src="@drawable/divline" />
 
         <EditText
-            android:id="@+id/phone"
+            android:id="@+id/new_phone"
             android:layout_width="234dp"
             android:layout_height="48dp"
             android:layout_gravity="right"
@@ -56,7 +56,7 @@
             tools:ignore="RtlHardcoded" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/new_password"
             android:layout_width="306dp"
             android:layout_height="53dp"
             android:layout_gravity="center_horizontal"
@@ -69,30 +69,8 @@
             android:textColorHint="#8B8B8B"
             tools:ignore="RtlSymmetry" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:text="忘记密码？"
-            android:textSize="14sp"
-            tools:ignore="RtlHardcoded"
-            android:focusable="true" />
-
         <Button
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/loginbutton"
-            android:text="登陆"
-            android:textColor="#FBF9F9"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_tryRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -102,8 +80,6 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
-
     </LinearLayout>
-
 
 </LinearLayout>

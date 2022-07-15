@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2107ed67-8b4d-4ea3-9f61-ac983e924264" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iMoneyServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/iMoneyServer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,19 +32,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/Environment/Andriod/iMoneyServer/lib/mysql-connector-java-8.0.29.jar",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="git" />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.SQL">
+  <component name="RunManager" selected="应用程序.server">
     <configuration name="SQL" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ServerDatabase" />
       <module name="iMoneyServer" />
@@ -58,8 +65,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.server" />
       <item itemvalue="应用程序.SQL" />
+      <item itemvalue="应用程序.server" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />

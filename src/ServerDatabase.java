@@ -8,15 +8,14 @@ public class ServerDatabase {
     public void connectSQL() {
         String url = "jdbc:mysql://localhost:3306/test"; //port：3306 database:master-database
         String username = "root"; //user
-        String password = "123456"; //password
+        String password = "root"; //password
         try {
             Class.forName("com.mysql.jdbc.Driver"); //加载驱动，连接数据库
             conn = DriverManager.getConnection(url, username, password);
         }
         //捕获加载驱动程序异常
         catch (ClassNotFoundException cnfex) {
-            System.err.println(
-                    "装载 JDBC/ODBC 驱动程序失败。");
+            System.err.println("装载 JDBC/ODBC 驱动程序失败。");
             cnfex.printStackTrace();
         }
         //捕获连接数据库异常
@@ -120,17 +119,17 @@ public class ServerDatabase {
     public static void main(String[] args) {
         ServerDatabase h = new ServerDatabase();
         h.connectSQL();
-        String select = "select * from userdata where _id="
+        String select = "select * from userdata where username="
                 + "'w'" + " and password="
                 + "'w'" + ";";
         ResultSet resultSet = h.selectSQL(select);
         h.layoutStyle2(resultSet);//调试信息
         String s = "select * from userdata";
 
-        String insert = "insert into userdata(_id,password) " +
+        String insert = "insert into userdata(username,password) " +
                 "values('aaron','102938475610')";
-        String update = "update userdata set password ='123456789' where _id= 'aaron'";
-        String delete = "delete from userdata where _id= 'aaron'";
+        String update = "update userdata set password ='123456789' where username= 'aaron'";
+        String delete = "delete from userdata where username= 'aaron'";
 
         if (h.insertSQL(insert)) {
             System.out.println("insert successfully");

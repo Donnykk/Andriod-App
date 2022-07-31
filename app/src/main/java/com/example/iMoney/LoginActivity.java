@@ -22,7 +22,7 @@ import java.util.Objects;
 public class LoginActivity extends AppCompatActivity {
     private EditText phone;     //输入手机号
     private EditText password;      //密码
-    private static final String ipAddress = "192.168.1.4";
+    private static final String ipAddress = "192.168.1.7";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +48,6 @@ public class LoginActivity extends AppCompatActivity {
                     //管理员账号直接登录
                     if (phone.getText().toString().equals("123456")
                             && password.getText().toString().equals("root")) {
-                        //startActivity(new Intent(LoginActivity.this, MainActivity.class));
                         finish();
                     } else {
                         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
@@ -70,7 +69,6 @@ public class LoginActivity extends AppCompatActivity {
                         DataInputStream dis = new DataInputStream(is);
                         String getStr = dis.readUTF(); //YES或者NO
                         if (getStr.equals("YES")) {
-                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
                             finish();
                         } else if (getStr.equals("NO")) {
                             Toast.makeText(getApplicationContext(), "登录失败", Toast.LENGTH_SHORT).show();

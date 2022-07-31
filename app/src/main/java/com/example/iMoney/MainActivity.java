@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(this.getSupportActionBar()).hide();
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_PrimePage, R.id.navigation_Find, R.id.navigation_Me)
-                .build();
+                R.id.navigation_PrimePage, R.id.navigation_Find, R.id.navigation_Me).build();
         NavController navController = Navigation.findNavController(this, R.id.fragment_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);

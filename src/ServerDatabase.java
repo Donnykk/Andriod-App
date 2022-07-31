@@ -6,11 +6,11 @@ public class ServerDatabase {
 
     // connect to MySQL
     public void connectSQL() {
-        String url = "jdbc:mysql://localhost:3306/test"; //port：3306 database:master-database
+        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&useSSL=false"; //port：3306 database:master-database
         String username = "root"; //user
         String password = "root"; //password
         try {
-            Class.forName("com.mysql.jdbc.Driver"); //加载驱动，连接数据库
+            Class.forName("com.mysql.cj.jdbc.Driver"); //加载驱动，连接数据库
             conn = DriverManager.getConnection(url, username, password);
         }
         //捕获加载驱动程序异常

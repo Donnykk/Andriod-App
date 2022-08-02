@@ -3,4 +3,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="todo">TODO</string>
+    <string name="str1">投资风格测试</string>
+    <string name="str2">Introduction here</string>
+    <string name="str3">开始投资风格测试</string>
+    <string name="todo1">TODO</string>
 </resources>

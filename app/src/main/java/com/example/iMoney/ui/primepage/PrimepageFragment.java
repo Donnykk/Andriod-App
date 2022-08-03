@@ -26,8 +26,8 @@ public class PrimepageFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentPrimepageBinding.inflate(inflater, container, false);
-        TextView tv = binding.hello;
-        tv.setText("Hi!");
+        TextView tv = binding.helloWord;
+        tv.setText("           Hi!");
         return binding.getRoot();
     }
 

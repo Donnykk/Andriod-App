@@ -22,7 +22,7 @@ import java.util.Objects;
 public class LoginActivity extends AppCompatActivity {
     private EditText phone;     //输入手机号
     private EditText password;      //密码
-    public static String username;
+    public static String username = "Admin";
     private static final String ipAddress = "192.168.1.7";
 
     @Override
@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                         DataInputStream dis = new DataInputStream(is);
                         String getStr = dis.readUTF(); //YES或者NO
                         if (getStr.equals("YES")) {
-                            username = phone.getText().toString();
+                            username = "用户" + phone.getText().toString();
                             finish();
                         } else if (getStr.equals("NO")) {
                             Toast.makeText(getApplicationContext(), "登录失败", Toast.LENGTH_SHORT).show();

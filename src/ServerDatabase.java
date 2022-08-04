@@ -116,7 +116,6 @@ public class ServerDatabase {
         }
     }
 
-    /*
     public static void main(String[] args) {
         ServerDatabase h = new ServerDatabase();
         h.connectSQL();
@@ -149,5 +148,4 @@ public class ServerDatabase {
         }
         h.deconnectSQL();
     }
-    **/
 }

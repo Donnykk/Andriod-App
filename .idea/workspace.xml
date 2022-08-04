@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2107ed67-8b4d-4ea3-9f61-ac983e924264" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ServerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerDatabase.java" afterDir="false" />
     </list>
@@ -44,6 +43,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/Environment/Andriod/iMoneyServer&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -55,7 +55,7 @@
       <command value="git" />
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.SQL">
+  <component name="RunManager" selected="应用程序.server">
     <configuration name="SQL" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ServerDatabase" />
       <module name="iMoneyServer" />
@@ -94,7 +94,11 @@
       <workItem from="1659229756986" duration="868000" />
       <workItem from="1659236367201" duration="811000" />
       <workItem from="1659251119216" duration="3356000" />
-      <workItem from="1659256393171" duration="346000" />
+      <workItem from="1659256393171" duration="1377000" />
+      <workItem from="1659355358276" duration="1870000" />
+      <workItem from="1659358393949" duration="122000" />
+      <workItem from="1659510683922" duration="2168000" />
+      <workItem from="1659581485860" duration="104000" />
     </task>
     <servers />
   </component>

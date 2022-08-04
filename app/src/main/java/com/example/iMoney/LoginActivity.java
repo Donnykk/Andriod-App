@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText phone;     //输入手机号
     private EditText password;      //密码
     public static String username = "Admin";
-    private static final String ipAddress = "192.168.1.7";
+    private static final String ipAddress = "39.106.139.86";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

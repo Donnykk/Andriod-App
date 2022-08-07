@@ -6,7 +6,6 @@ import java.security.MessageDigest;
 import java.sql.ResultSet;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Objects;
 
 public class MyServer {
     public static void main(String[] args) {
@@ -56,6 +55,8 @@ public class MyServer {
                 dis1.close();
                 s1.close();
             }
+        } catch (EOFException eofException) {
+            System.out.println("这是合法的，客户端已经关闭");
         } catch (IOException e) {
             e.printStackTrace();
         }

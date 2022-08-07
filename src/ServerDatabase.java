@@ -105,7 +105,6 @@ public class ServerDatabase {
             while (rs.next()) {
                 System.out.println(rs.getString("username") + "\t"
                         + rs.getString("password") + "\n");
-                //"\t" + rs.getInt("age") + "\t"+ rs.getString("work") + "\t" + rs.getString("others") +"\n");
             }
         } catch (SQLException e) {
             System.out.println("显示时数据库出错。");

@@ -50,33 +50,13 @@ public class ServerDatabase {
 
     // execute insertion language
     public boolean insertSQL(String sql) {
-        try {
-            statement = conn.prepareStatement(sql);
-            statement.executeUpdate();
-            return true;
-        } catch (SQLException e) {
-            System.out.println("插入数据库时出错：");
-            e.printStackTrace();
-        } catch (Exception e) {
-            System.out.println("插入时出错：");
-            e.printStackTrace();
-        }
+        updateSQL(sql);
         return false;
     }
 
     //execute delete language
     public boolean deleteSQL(String sql) {
-        try {
-            statement = conn.prepareStatement(sql);
-            statement.executeUpdate();
-            return true;
-        } catch (SQLException e) {
-            System.out.println("插入数据库时出错：");
-            e.printStackTrace();
-        } catch (Exception e) {
-            System.out.println("插入时出错：");
-            e.printStackTrace();
-        }
+        updateSQL(sql);
         return false;
     }
 

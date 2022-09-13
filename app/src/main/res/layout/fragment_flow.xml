@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right">
+            android:layout_gravity="end">
 
 
             <EditText
@@ -24,7 +24,7 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
-                android:drawableLeft="@drawable/search_icon"
+                android:drawableStart="@drawable/search_icon"
                 android:hint="请输入搜索内容"
                 app:layout_constraintEnd_toStartOf="@+id/bt1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,7 @@
                 android:gravity="center"
                 android:text="A股市场|资金流向"
                 android:textColor="@color/white"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -72,13 +72,13 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="#8470FF"
             android:gravity="center"
-            android:text="北向资金"
+            android:text="北向/南向资金"
             android:textColor="@color/white" />
 
         <LinearLayout
@@ -92,10 +92,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#BAA5DD"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:layout_marginRight="10dp"/>
+                android:gravity="start"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/tv2"
@@ -103,16 +103,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#E6E6FA"
-                android:gravity="left"
-                android:textColor="@color/black"
-                android:layout_marginRight="10dp"/>
+                android:gravity="start"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <TextView
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:background="#8470FF"
             android:gravity="center"
@@ -130,10 +130,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#BAA5DD"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:layout_marginRight="10dp"/>
+                android:gravity="start"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/tv4"
@@ -141,16 +141,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#E6E6FA"
-                android:gravity="left"
-                android:textColor="@color/black"
-                android:layout_marginRight="10dp"/>
+                android:gravity="start"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <TextView
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:background="#8470FF"
             android:gravity="center"
@@ -168,10 +168,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#BAA5DD"
-                android:gravity="left"
-                android:textColor="@color/white"
-                android:layout_marginRight="10dp"/>
+                android:gravity="start"
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/tv6"
@@ -179,15 +179,52 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
                 android:background="#E6E6FA"
-                android:gravity="left"
-                android:textColor="@color/black"
-                android:layout_marginRight="10dp"/>
+                android:gravity="start"
+                android:textColor="@color/black" />
         </LinearLayout>
 
         <TextView
-            android:layout_height="70dp"
-            android:layout_width="match_parent" />
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="#8470FF"
+            android:gravity="center"
+            android:text="大盘资金"
+            android:textColor="@color/white" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#BAA5DD"
+                android:gravity="start"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="#E6E6FA"
+                android:gravity="start"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
     </LinearLayout>
 </ScrollView>

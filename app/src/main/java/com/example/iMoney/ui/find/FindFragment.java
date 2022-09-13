@@ -14,6 +14,8 @@ import androidx.navigation.Navigation;
 import com.example.iMoney.R;
 import com.example.iMoney.databinding.FragmentFindBinding;
 
+import java.util.Objects;
+
 public class FindFragment extends Fragment {
     private FragmentFindBinding binding;
 
@@ -26,22 +28,34 @@ public class FindFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Button index_button = binding.bt2;
-        index_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoIndex));
+        index_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoIndex));
 
         Button ashare_button = binding.bt3;
-        ashare_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoAshare));
+        ashare_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoAshare));
 
         Button knowledge_button = binding.bt4;
-        knowledge_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoKnowledge));
+        knowledge_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoKnowledge));
 
         Button euro_button = binding.bt5;
-        euro_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoHistory));
+        euro_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
 
         Button pons_button = binding.bt6;
-        pons_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoHistory));
+        pons_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
 
         Button tulip_button = binding.bt7;
-        tulip_button.setOnClickListener(v -> Navigation.findNavController(getView()).navigate(R.id.FindtoHistory));
+        tulip_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
+
+        Button south_button = binding.bt8;
+        south_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
+
+        Button mississippi_button = binding.bt9;
+        mississippi_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
+
+        Button asia_button = binding.bt10;
+        asia_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
+
+        Button danger_button = binding.bt11;
+        danger_button.setOnClickListener(v -> Navigation.findNavController(requireView()).navigate(R.id.FindtoHistory));
     }
 
     @Override

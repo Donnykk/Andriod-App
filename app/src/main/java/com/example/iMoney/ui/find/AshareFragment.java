@@ -52,6 +52,8 @@ public class AshareFragment extends Fragment {
         bt10.setOnClickListener(v->Navigation.findNavController(getView()).navigate(R.id.AsharetoFlow));
         Button bt11 = binding.b23;
         bt11.setOnClickListener(v->Navigation.findNavController(getView()).navigate(R.id.AsharetoFlow));
+        Button bt12 = binding.b21;
+        bt12.setOnClickListener(v->Navigation.findNavController(getView()).navigate(R.id.AsharetoFlow));
     }
 
     @Override

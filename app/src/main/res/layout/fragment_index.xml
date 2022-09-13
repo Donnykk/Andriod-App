@@ -10,13 +10,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right">
+            android:layout_gravity="right"
+            tools:ignore="RtlHardcoded">
 
 
             <EditText
@@ -24,7 +25,7 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
-                android:drawableLeft="@drawable/search_icon"
+                android:drawableStart="@drawable/search_icon"
                 android:hint="请输入搜索内容"
                 app:layout_constraintEnd_toStartOf="@+id/bt1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -88,10 +89,10 @@
                 android:id="@+id/b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
-                android:text="沪深指数"
+                android:text="常用指数"
                 android:textColor="@color/white" />
         </LinearLayout>
 
@@ -101,6 +102,16 @@
             android:divider="@drawable/divide_line"
             android:orientation="horizontal"
             android:showDividers="end">
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="概述"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/b5"
@@ -116,7 +127,7 @@
                 android:id="@+id/b6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="沪深300"
                 android:textColor="@color/black" />
@@ -133,7 +144,7 @@
                 android:id="@+id/b7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="全球重要指数"
@@ -146,6 +157,75 @@
             android:divider="@drawable/divide_line"
             android:orientation="horizontal"
             android:showDividers="end">
+
+            <Button
+                android:id="@+id/b11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="道琼斯工业平均指数"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/b12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="标普500指数"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/b13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="纳斯达克指数"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divide_line"
+            android:orientation="horizontal"
+            android:showDividers="end">
+
+            <Button
+                android:id="@+id/b14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="英国富时100指数"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/b15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="日经指数"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/b16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="香港恒生指数"
+                android:textColor="@color/black" />
 
         </LinearLayout>
 
@@ -160,7 +240,7 @@
                 android:id="@+id/b8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="股指期货"
@@ -187,7 +267,7 @@
                 android:id="@+id/b9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="汇率行情"
@@ -204,8 +284,8 @@
         </LinearLayout>
 
         <TextView
-            android:layout_height="70dp"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
 
     </LinearLayout>
 </ScrollView>

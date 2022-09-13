@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.me.MeFragment">
+    tools:context=".MeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,21 +21,31 @@
             android:layout_marginTop="40dp"
             android:contentDescription="@string/todo" />
 
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_edit_foreground"
+            android:contentDescription="@string/todo" />
+
         <TextView
             android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="60dp"
             android:gravity="center"
             android:textSize="30sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/test_title"
@@ -52,7 +62,7 @@
             android:id="@+id/test_intro_pic"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:contentDescription="@string/todo1"
+            android:contentDescription="@string/todo"
             android:src="@mipmap/test_intro_pic" />
 
         <TextView

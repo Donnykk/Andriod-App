@@ -37,38 +37,36 @@
                 android:textColor="#8470FF" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:background="#8470FF"
-            android:gravity="center"
-            android:text="欧债危机"
-            android:textColor="@color/white" />
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/bt1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/euro"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="#FAF0F6"
-                android:text="  简介："
-                android:textStyle="bold" />
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#8470FF"
+                android:gravity="center"
+                android:text="欧债危机"
+                android:textColor="@color/white" />
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/euro" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：欧洲主权债务危机主要以希腊为代表，表现为经济下滑，货币高估值，出口差，政府依靠投资与消费拉动经济，赤字不断积累。在欧盟内欧债危机面临着科技水平无法短期提升但币值不易保持稳定的双重挑战。分析欧债危机产生原因，最根本的是国家经济失去“生产性”，此外还有历史、体制和自身的内在因素。"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/bt1"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:layout_width="100dp"
@@ -92,15 +90,15 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/pons" />
 
-            <TextView
-                android:layout_width="158dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="#FAF0F6"
-                android:text="  简介："
-                android:textStyle="bold" />
-
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：庞氏骗局是一种金融投资诈骗行为的名称，在今天更常见的形式是金字塔骗局。诈骗分子将新加入投资人的钱用来支付旧投资者的利息和回报，从而制造了盈利的假象，进而不断扩大受害者范围，获取更多的资金，但实际上投资行为不存在实质性的利润。通常我们见到的类似案件为非法集资、非法传销。"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="100dp"
@@ -113,30 +111,100 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bt1" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/bt3"
-                android:layout_width="250dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/tulip" />
-
-            <TextView
-                android:layout_width="158dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="#FAF0F6"
-                android:text="  简介："
-                android:textStyle="bold" />
-
-        </LinearLayout>
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tulip" />
 
         <TextView
-            android:layout_height="70dp"
-            android:layout_width="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：郁金香泡沫起源于16世纪中期，郁金香被从土耳其开始引入欧洲并引发欧洲人们的狂热追求，富人以展示珍品郁金香作为财富炫耀的标志，随着时间推移，投资郁金香并不是用于观赏或出于喜爱，而是一种看涨行为，人们期望通过郁金香价格上涨而获利。但是一旦有人清醒过来开始卖空郁金香，由于羊群效应其他人也会跟从，很快郁金香价格就会大幅下跌，给持有者带来巨大损失。"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#8470FF"
+            android:gravity="center"
+            android:text="南海泡沫"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：南海公司贿赂政府，向国会推出以南海股票换取国债的计划，促使南海股票大受追捧，全面炒股，导致市场上有许多泡沫公司浑水摸鱼打算趁着势头分一杯羹。国会为此颁布《泡沫法案》，炒股热潮随之减退，触发了南海公司股价急跌，大众对政府诚信也遭遇破产。"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#8470FF"
+            android:gravity="center"
+            android:text="密西西比泡沫"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：密西西比泡沫与郁金香泡沫、南海泡沫并称欧洲早期三大经济泡沫。背景是约翰劳打算用债转股化解法国债务危机，他收购了密西西比公司，发行大量股票并允许将法国国债转为密西西比股票的操作，民众对公司看好，股价不断攀升。但是有的民众发现密西西比公司的市值被远远高估，一个人的抛售最终演变为恐慌和扎堆纸币兑换铸币，泡沫破裂。"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#8470FF"
+            android:gravity="center"
+            android:text="亚洲金融危机"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：亚洲金融股危机开始于1997年，亚洲多国地区发生货币大幅贬值、股市大幅下跌、企业倒闭、工人失业、经济萧条，同时国家政局也面临不稳。原因从两个角度来考虑：亚洲国家经济形态上，新马泰日韩为外向型经济国家，对世界市场依赖性高；另外这场亚洲金融危机与美国的经济利益、政策影响有着密不可分的联系。国内学者分析认为触发因素包括经济因素、内在因素和世界因素。经济上一些国家外汇政策不当、外债结构不合理；内在层面，发展中国家追求高速增长造成透支与不良资产膨胀，政府干预过度；世界层面，国际分工、贸易和货币体制不合理，经济全球化具有负面影响，对第三世界国家不利。"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="#8470FF"
+            android:gravity="center"
+            android:text="次贷危机"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FAF0F6"
+            android:text="简介：美国次贷危机也成为次级房债危机，它是一场由于次级抵押贷款机构破产、投资基金被迫关闭、股市剧烈震荡引起的金融风暴，导致全球主要金融市场出现流动性不足危机。通常认为此次危机主要由金融监管制度缺失造成，华尔街投资者钻了制度的漏洞，欺瞒大众。"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
 
     </LinearLayout>
 </ScrollView>

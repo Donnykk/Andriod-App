@@ -20,8 +20,9 @@ import java.net.Socket;
 import java.util.Objects;
 
 public class LoginActivity extends AppCompatActivity {
-    private EditText phone;     //输入手机号
-    private EditText password;      //密码
+    public static String phoneNum;     //输入手机号
+    public EditText phone;
+    public EditText password;      //密码
     public static String username = "Admin";
     private static final String ipAddress = "39.106.139.86";
 
@@ -32,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         Objects.requireNonNull(this.getSupportActionBar()).hide();
         //获取变量值
         phone = findViewById(R.id.phone);
+        phoneNum = phone.toString();
         password = findViewById(R.id.password);
         //登录按钮
         Button btn1 = findViewById(R.id.btn_login);
@@ -48,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 try {
                     //管理员账号直接登录
                     if (phone.getText().toString().equals("123456")
-                            && password.getText().toString().equals("root")) {
+                            && password.getText().toString().equals("123456")) {
                         finish();
                     } else {
                         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
@@ -60,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                         Socket s1 = new Socket(ipAddress, 8088);
                         OutputStream os = s1.getOutputStream();
                         DataOutputStream dos = new DataOutputStream(os);
-                        dos.writeUTF(phone.getText().toString() + " " + password.getText().toString() + " " + "Login"); // 向服务器传送登录账号和密码
+                        dos.writeUTF(phone + " " + password.getText().toString() + " " + "Login"); // 向服务器传送登录账号和密码
                         //等一秒钟
                         new Handler().postDelayed(new Runnable() {
                             public void run() {
@@ -70,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
                         DataInputStream dis = new DataInputStream(is);
                         String getStr = dis.readUTF(); //YES或者NO
                         if (getStr.equals("YES")) {
-                            username = "用户" + phone.getText().toString();
+                            username = "用户" + phone;
                             finish();
                         } else if (getStr.equals("NO")) {
                             Toast.makeText(getApplicationContext(), "登录失败", Toast.LENGTH_SHORT).show();

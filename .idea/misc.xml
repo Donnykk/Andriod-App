@@ -47,12 +47,18 @@
         <entry key="..\:/Environment/Andriod/Project_1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.28703703703703703" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/drawable/buttonstyle1.xml" value="0.2759259259259259" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/drawable/circle_img.xml" value="0.178" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/drawable/edit.xml" value="0.178" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/drawable/ic_edit_background.xml" value="0.178" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/drawable/ic_edit_foreground.xml" value="0.178" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/activity_main.xml" value="0.18490374873353596" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/circle_img.xml" value="0.20799180327868852" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_ashare.xml" value="0.23007246376811594" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_basic.xml" value="0.22780797101449277" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_common.xml" value="0.2857789855072464" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_find.xml" value="0.22" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_flow.xml" value="0.24864130434782608" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_gaishu.xml" value="0.2857789855072464" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_global.xml" value="0.1525282072712077" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_history.xml" value="0.2463768115942029" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_index.xml" value="0.2463768115942029" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_knowledge.xml" value="0.23007246376811594" />
@@ -62,6 +68,7 @@
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/fragment_tiger.xml" value="0.24864130434782608" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/login_activity.xml" value="0.266304347826087" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/register_activity.xml" value="0.2758152173913043" />
+        <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/test_activity.xml" value="0.2857789855072464" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/testq1.xml" value="0.2758152173913043" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/testq2.xml" value="0.2758152173913043" />
         <entry key="..\:/Environment/Andriod/iMoney/app/src/main/res/layout/testq3.xml" value="0.2758152173913043" />

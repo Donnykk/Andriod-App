@@ -16,7 +16,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right">
+            android:layout_gravity="end">
 
 
             <EditText
@@ -24,7 +24,7 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
-                android:drawableLeft="@drawable/search_icon"
+                android:drawableStart="@drawable/search_icon"
                 android:hint="请输入搜索内容"
                 app:layout_constraintEnd_toStartOf="@+id/bt1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +55,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:orientation="horizontal">
 
             <Button
@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="大盘指数"
                 android:textColor="@color/black"
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="A股市场"
                 android:textColor="@color/black"
@@ -103,14 +103,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp">
+            android:layout_marginStart="10dp">
 
             <Button
                 android:id="@+id/bt5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="欧债危机"
                 android:textColor="@color/black"
@@ -122,7 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="庞氏骗局"
                 android:textColor="@color/black"
@@ -134,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="郁金香泡沫"
                 android:textColor="@color/black"
@@ -142,9 +142,70 @@
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="南海泡沫"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@+id/tv3"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="密西西比泡沫"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@+id/tv3"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/bt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="亚洲金融危机"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@+id/tv3"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <Button
+                android:id="@+id/bt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#E6E6FA"
+                android:text="次贷危机"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="@+id/tv3"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
         <TextView
-            android:layout_height="70dp"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
 
     </LinearLayout>
 </ScrollView>

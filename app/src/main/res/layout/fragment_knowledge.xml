@@ -10,13 +10,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right">
+            android:layout_gravity="end">
 
 
             <EditText
@@ -24,7 +24,7 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
-                android:drawableLeft="@drawable/search_icon"
+                android:drawableStart="@drawable/search_icon"
                 android:hint="请输入搜索内容"
                 app:layout_constraintEnd_toStartOf="@+id/bt1"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -88,7 +88,7 @@
                 android:background="#FFE4E1"
                 android:gravity="center"
                 android:text="选股知识"
-                android:textSize="25dp" />
+                android:textSize="25sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -97,10 +97,9 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:background="#FFE4E1"
-                android:gravity="center"
-                android:text="简介：（主要内容）基本面、消息面、技术面选股" />
+                android:text="基本的选股思路是：首先进行宏观分析，得出投资防御性行业或周期性行业的指向性；其次进行行业分析与地区分析，综合考虑各项选股指标；而后进行公司分析，一般对市值较大的部分公司进行排名筛选；最后，对于所选公司股票价格走势进行技术分析，得出应选择的合适的投资时机。" />
         </LinearLayout>
 
         <TextView
@@ -110,7 +109,7 @@
             android:background="#FFE4E1"
             android:gravity="center"
             android:text="选股指标"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,7 +130,7 @@
                 android:id="@+id/b5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
                 android:layout_weight="1"
                 android:backgroundTint="#E6E6FA"
                 android:text="技术面"
@@ -139,8 +138,8 @@
         </LinearLayout>
 
         <TextView
-            android:layout_height="70dp"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
 
     </LinearLayout>
 </ScrollView>

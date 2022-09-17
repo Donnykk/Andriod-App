@@ -6,7 +6,7 @@ public class ServerDatabase {
 
     // connect to MySQL
     public void connectSQL() {
-        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&useSSL=false"; //port：3306 database:master-database
+        String url = "jdbc:mysql://localhost:3306/test?characterEncoding=utf-8&useSSL=false"; //port：3306 database:test
         String username = "root"; //user
         String password = "root"; //password
         try {
@@ -79,12 +79,13 @@ public class ServerDatabase {
     // show data in ju_users
     public void layoutStyle2(ResultSet rs) {
         System.out.println("-----------------");
-        System.out.println("username" + "\t" + "password");
+        System.out.println("username" + "\t" + "password" + "\t" + "name");
         System.out.println("-----------------");
         try {
             while (rs.next()) {
                 System.out.println(rs.getString("username") + "\t"
-                        + rs.getString("password") + "\n");
+                        + rs.getString("password") + "\t"
+                        + rs.getString("name") + "\n");
             }
         } catch (SQLException e) {
             System.out.println("显示时数据库出错。");
@@ -98,31 +99,12 @@ public class ServerDatabase {
     public static void main(String[] args) {
         ServerDatabase h = new ServerDatabase();
         h.connectSQL();
-        String select = "select * from userdata where username="
-                + "'w'" + " and password="
-                + "'w'" + ";";
-        ResultSet resultSet = h.selectSQL(select);
-        h.layoutStyle2(resultSet);//调试信息
         String s = "select * from userdata";
-
-        String insert = "insert into userdata(username,password) " +
-                "values('aaron','102938475610')";
-        String update = "update userdata set password ='123456789' where username= 'aaron'";
-        String delete = "delete from userdata where username= 'aaron'";
-
-        if (h.insertSQL(insert)) {
-            System.out.println("insert successfully");
-            resultSet = h.selectSQL(s);
-            h.layoutStyle2(resultSet);
-        }
+        String update = "update userdata set name = 'Don' where username = '18136229880'";
+        System.out.println(update);
         if (h.updateSQL(update)) {
             System.out.println("update successfully");
-            resultSet = h.selectSQL(s);
-            h.layoutStyle2(resultSet);
-        }
-        if (h.deleteSQL(delete)) {
-            System.out.println("delete successfully");
-            resultSet = h.selectSQL(s);
+            ResultSet resultSet = h.selectSQL(s);
             h.layoutStyle2(resultSet);
         }
         h.deconnectSQL();

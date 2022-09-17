@@ -1,12 +1,10 @@
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -52,6 +50,9 @@ public class MyServer {
                     break;
                 case "Registered":
                     insertMasterDB(cmds);
+                    break;
+                case "ChangeName":
+                    changeName(cmds);
                     break;
             }
         } catch (IOException e) {
@@ -102,6 +103,9 @@ public class MyServer {
                 case "Registered":
                     insertMasterDB(cmds);
                     break;
+                case "ChangeName":
+                    changeName(cmds);
+                    break;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -122,9 +126,23 @@ public class MyServer {
         Date startTime = new Date();
         String startTimeSting = sdf.format(startTime);
         String s = "select * from userdata";// 调试信息
-        String insert = "insert into userdata(username,password,time) " + "values('" + commands[0] + "','" + MD5(commands[1]) + "','" + startTimeSting + "')";
+        String insert = "insert into userdata(username,password,time,name,picture) " + "values('" + commands[0] + "','" + MD5(commands[1]) + "','" + startTimeSting + "', NULL, NULL)";
         if (masterDB.insertSQL(insert)) {
             System.out.println("insert successfully");
+            ResultSet resultSet = masterDB.selectSQL(s);// 调试信息
+            masterDB.layoutStyle2(resultSet);// 调试信息
+        }
+        masterDB.deconnectSQL();// 关闭连接
+    }
+
+    private static void changeName(String[] commands) {
+        ServerDatabase masterDB = new ServerDatabase();
+        masterDB.connectSQL();
+        String s = "select * from userdata";// 调试信息
+        String update = "update userdata set name = '" + commands[1] + "' where username = '" + commands[0] + "'";
+        System.out.println(update);
+        if (masterDB.updateSQL(update)) {
+            System.out.println("change successfully");
             ResultSet resultSet = masterDB.selectSQL(s);// 调试信息
             masterDB.layoutStyle2(resultSet);// 调试信息
         }
@@ -159,7 +177,9 @@ public class MyServer {
                 // 允许登录命令
                 OutputStream os = s1.getOutputStream();
                 DataOutputStream dos = new DataOutputStream(os);
-                dos.writeUTF("YES");
+                String name = resultSet.getString(4);
+                System.out.println(name);
+                dos.writeUTF("YES " + name);
                 dos.close();
                 System.out.println("用户密码正确");// 调试信息
             }

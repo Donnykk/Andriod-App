@@ -2,6 +2,7 @@ package com.example.iMoney;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -10,9 +11,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
@@ -28,7 +31,8 @@ import java.net.Socket;
 
 public class MeFragment extends Fragment {
     private FragmentMeBinding binding;
-    private static final String ipAddress = "39.106.139.86";
+    //private static final String ipAddress = "39.106.139.86";
+    private static final String ipAddress = "10.136.93.255";
 
     @SuppressLint("SetTextI18n")
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -58,19 +62,31 @@ public class MeFragment extends Fragment {
     }
 
     public void showChoice() throws IOException {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), android.R.style.Theme_Holo_Light_Dialog);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         final String[] choices = {"编辑头像", "编辑昵称"};
         Socket s1 = new Socket(ipAddress, 8088);
         OutputStream os = s1.getOutputStream();
         DataOutputStream dos = new DataOutputStream(os);
         String phone = LoginActivity.phoneNum;
-        //设置一个下拉的列表选择项
         builder.setItems(choices, (dialog, choice) -> {
             if (choice == 1) {
                 //编辑昵称
-
+                View v = getLayoutInflater().inflate(R.layout.popmenu, null);
+                final EditText et = (EditText) v.findViewById(R.id.name_dialog);
+                new AlertDialog.Builder(getActivity()).setView(v)
+                        .setPositiveButton("确定", (dialogInterface, i) -> {
+                            LoginActivity.username = et.getText().toString();
+                            binding.username.setText(et.getText().toString());
+                            //修改数据库
+                            try {
+                                dos.writeUTF(phone + " " + et.getText().toString() + " " + "ChangeName");
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }).setNegativeButton("取消", null).show();
             } else if (choice == 0) {
                 //编辑头像
+                Toast.makeText(getActivity(), "哈哈哈", Toast.LENGTH_SHORT).show();
             }
         });
         builder.show();

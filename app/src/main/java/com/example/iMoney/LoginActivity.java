@@ -23,8 +23,9 @@ public class LoginActivity extends AppCompatActivity {
     public static String phoneNum;     //输入手机号
     public EditText phone;
     public EditText password;      //密码
-    public static String username = "Admin";
-    private static final String ipAddress = "39.106.139.86";
+    public static String username = "NULL";
+    //private static final String ipAddress = "39.106.139.86";
+    private static final String ipAddress = "10.136.93.255";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
         Objects.requireNonNull(this.getSupportActionBar()).hide();
         //获取变量值
         phone = findViewById(R.id.phone);
-        phoneNum = phone.toString();
         password = findViewById(R.id.password);
         //登录按钮
         Button btn1 = findViewById(R.id.btn_login);
@@ -62,17 +62,21 @@ public class LoginActivity extends AppCompatActivity {
                         Socket s1 = new Socket(ipAddress, 8088);
                         OutputStream os = s1.getOutputStream();
                         DataOutputStream dos = new DataOutputStream(os);
-                        dos.writeUTF(phone + " " + password.getText().toString() + " " + "Login"); // 向服务器传送登录账号和密码
+                        phoneNum = phone.getText().toString();
+                        dos.writeUTF(phoneNum + " " + password.getText().toString() + " " + "Login"); // 向服务器传送登录账号和密码
                         //等一秒钟
-                        new Handler().postDelayed(new Runnable() {
-                            public void run() {
-                            }
+                        new Handler().postDelayed(() -> {
                         }, 1000);
                         InputStream is = s1.getInputStream();
                         DataInputStream dis = new DataInputStream(is);
                         String getStr = dis.readUTF(); //YES或者NO
-                        if (getStr.equals("YES")) {
-                            username = "用户" + phone;
+                        if (getStr.startsWith("YES")) {
+                            String[] cmds = getStr.split("\\s+");
+                            username = cmds[1];
+                            if (Objects.equals(username, "null")) {
+                                username = "用户" + phoneNum;
+                                Toast.makeText(getApplicationContext(), username, Toast.LENGTH_SHORT).show();
+                            }
                             finish();
                         } else if (getStr.equals("NO")) {
                             Toast.makeText(getApplicationContext(), "登录失败", Toast.LENGTH_SHORT).show();

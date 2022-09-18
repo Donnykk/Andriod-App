@@ -19,7 +19,7 @@ public class Register extends AppCompatActivity {
     private EditText password;
     private EditText password_again;
     private static final String ipAddress = "39.106.139.86";
-    //private static final String ipAddress = "10.136.93.255";
+    //private static final String ipAddress = "10.130.22.101";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

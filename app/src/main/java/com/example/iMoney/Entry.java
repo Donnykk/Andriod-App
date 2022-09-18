@@ -1,7 +1,6 @@
 package com.example.iMoney;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class Entry implements Serializable {
     public int id;

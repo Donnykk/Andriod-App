@@ -14,9 +14,9 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right">
+            android:gravity="center">
 
 
             <EditText
@@ -24,23 +24,17 @@
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="8dp"
-                android:drawableLeft="@drawable/search_icon"
+                android:drawableStart="@drawable/search_icon"
                 android:hint="请输入搜索内容"
-                app:layout_constraintEnd_toStartOf="@+id/bt1"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:singleLine="true" />
 
             <Button
                 android:id="@+id/bt1"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="24dp"
                 android:backgroundTint="#F0F0F0"
                 android:text="搜索"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/et1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
 

@@ -14,10 +14,9 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            tools:ignore="RtlHardcoded">
+            android:gravity="center">
 
 
             <EditText
@@ -27,23 +26,19 @@
                 android:layout_marginEnd="8dp"
                 android:drawableStart="@drawable/search_icon"
                 android:hint="请输入搜索内容"
-                app:layout_constraintEnd_toStartOf="@+id/bt1"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:singleLine="true" />
 
             <Button
                 android:id="@+id/bt1"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="24dp"
                 android:backgroundTint="#F0F0F0"
                 android:text="搜索"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/et1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                android:textColor="@color/black" />
 
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -89,7 +84,7 @@
                 android:id="@+id/b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="常用指数"
@@ -107,7 +102,7 @@
                 android:id="@+id/b10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginEnd="5dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="概述"
@@ -144,7 +139,7 @@
                 android:id="@+id/b7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="全球重要指数"
@@ -162,7 +157,7 @@
                 android:id="@+id/b11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginEnd="5dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="道琼斯工业平均指数"
@@ -185,6 +180,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:backgroundTint="#E6E6FA"
+                android:layout_gravity="center"
                 android:text="纳斯达克指数"
                 android:textColor="@color/black" />
 
@@ -201,7 +197,7 @@
                 android:id="@+id/b14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginEnd="5dp"
                 android:backgroundTint="#E6E6FA"
                 android:text="英国富时100指数"
@@ -240,7 +236,7 @@
                 android:id="@+id/b8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="股指期货"
@@ -267,7 +263,7 @@
                 android:id="@+id/b9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#8470FF"
                 android:text="汇率行情"

@@ -31,8 +31,8 @@ import java.net.Socket;
 
 public class MeFragment extends Fragment {
     private FragmentMeBinding binding;
-    //private static final String ipAddress = "39.106.139.86";
-    private static final String ipAddress = "10.136.93.255";
+    private static final String ipAddress = "39.106.139.86";
+    //private static final String ipAddress = "10.136.93.255";
 
     @SuppressLint("SetTextI18n")
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

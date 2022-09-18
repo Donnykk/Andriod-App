@@ -1,16 +1,22 @@
 package com.example.iMoney.ui.find;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import com.example.iMoney.R;
 import com.example.iMoney.databinding.FragmentGlobalBinding;
 
 public class GlobalFragment extends Fragment {
@@ -19,6 +25,31 @@ public class GlobalFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentGlobalBinding.inflate(inflater, container, false);
+
+        Button search_btn=binding.bt1;
+        EditText searchText=binding.et1;
+        search_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("search_content",searchText.getText().toString());
+                Navigation.findNavController(requireView()).navigate(R.id.fragment_search,bundle);
+            }
+        });
+        searchText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(!hasFocus){
+                    if (v == null || v.getWindowToken() == null) {
+                        return;
+                    }
+                    InputMethodManager im = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    if (im != null) {
+                        im.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                    }
+                }
+            }
+        });
         return binding.getRoot();
     }
 

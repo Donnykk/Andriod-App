@@ -12,6 +12,20 @@
         tools:layout="@layout/fragment_primepage" />
 
     <fragment
+        android:id="@+id/fragment_search"
+        android:name="com.example.iMoney.ui.find.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search">
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_entry"
+        android:name="com.example.iMoney.ui.find.EntryFragment"
+        android:label="Entry"
+        tools:layout="@layout/fragment_entry"
+        />
+
+    <fragment
         android:id="@+id/navigation_Find"
         android:name="com.example.iMoney.ui.find.FindFragment"
         android:label="发现"
@@ -36,6 +50,11 @@
             app:destination="@id/fragment_history"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/FindtoSearch"
+            app:destination="@id/fragment_search"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
     </fragment>
 
     <fragment

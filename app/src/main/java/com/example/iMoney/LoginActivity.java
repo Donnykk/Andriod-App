@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
@@ -59,11 +60,20 @@ public class LoginActivity extends AppCompatActivity {
                         StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
                                 .detectLeakedSqlLiteObjects().penaltyLog()
                                 .penaltyDeath().build());
+                        //超时检测
+                        long timeMillis = System.currentTimeMillis();
                         Socket s1 = new Socket(ipAddress, 8088);
                         OutputStream os = s1.getOutputStream();
                         DataOutputStream dos = new DataOutputStream(os);
                         phoneNum = phone.getText().toString();
-                        dos.writeUTF(phoneNum + " " + password.getText().toString() + " " + "Login"); // 向服务器传送登录账号和密码
+                        try {
+                            if (System.currentTimeMillis() - timeMillis > 5000) {
+                                Toast.makeText(getApplicationContext(), "服务器炸啦", Toast.LENGTH_SHORT).show();
+                            }
+                            dos.writeUTF(phoneNum + " " + password.getText().toString() + " " + "Login"); // 向服务器传送登录账号和密码
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                         //等一秒钟
                         new Handler().postDelayed(() -> {
                         }, 1000);

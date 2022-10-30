@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     public EditText phone;
     public EditText password;      //密码
     public static String username = "NULL";
+    public static String pic_num = "NULL";
     private static final String ipAddress = "39.106.139.86";
     //private static final String ipAddress = "10.130.22.101";
 

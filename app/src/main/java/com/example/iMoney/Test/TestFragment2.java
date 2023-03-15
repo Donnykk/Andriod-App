@@ -16,15 +16,14 @@ public class TestFragment2 extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.testq2,container,false);
+        return inflater.inflate(R.layout.testq2, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Button q2btn = view.findViewById(R.id.q2btn);
-        q2btn.setOnClickListener(v -> getFragmentManager().beginTransaction().replace(this.getId(),new TestFragment3()).addToBackStack(null).commit());
-
+        q2btn.setOnClickListener(v -> getFragmentManager().beginTransaction().replace(this.getId(), new TestFragment3()).addToBackStack(null).commit());
     }
 
     @Override

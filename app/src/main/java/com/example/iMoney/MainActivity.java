@@ -31,20 +31,13 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.fragment_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
-
-
-        MyDatabaseHelper myHelper = new MyDatabaseHelper(this);
+        MyDatabaseHelper myHelper = new MyDatabaseHelper(this, "knowledge.db");
         try {
             myHelper.CopyDBFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-
         startActivity(new Intent(MainActivity.this, LoginActivity.class));
-
-
     }
 
     @Override

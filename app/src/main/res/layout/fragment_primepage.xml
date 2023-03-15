@@ -25,7 +25,7 @@
             android:id="@+id/hello_word"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="18dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/pop"
             android:textSize="20sp"
@@ -53,11 +53,13 @@
                 android:layout_weight="2"
                 android:backgroundTint="@color/white"
                 android:gravity="start"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
-            <TextView
+            <ImageView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:background="@drawable/euro" />
         </LinearLayout>
@@ -75,11 +77,13 @@
                 android:layout_weight="2"
                 android:backgroundTint="@color/white"
                 android:gravity="start"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:background="@drawable/euro" />
         </LinearLayout>
@@ -96,11 +100,13 @@
                 android:layout_weight="2"
                 android:backgroundTint="@color/white"
                 android:gravity="start"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:background="@drawable/euro" />
         </LinearLayout>
@@ -117,11 +123,13 @@
                 android:layout_weight="2"
                 android:backgroundTint="@color/white"
                 android:gravity="start"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:background="@drawable/euro" />
         </LinearLayout>
@@ -138,11 +146,13 @@
                 android:layout_weight="2"
                 android:backgroundTint="@color/white"
                 android:gravity="start"
-                android:textSize="15sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_weight="1"
                 android:background="@drawable/euro" />
         </LinearLayout>

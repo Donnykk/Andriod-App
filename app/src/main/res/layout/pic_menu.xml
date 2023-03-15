@@ -9,23 +9,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="风格1111111" />
+        android:text="中庸型（稳健型）" />
 
     <Button
         android:id="@+id/bt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:background="@drawable/image1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="风格222222" />
+        android:text="冒险型" />
 
     <Button
         android:id="@+id/bt2"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/image2" />
 
@@ -33,11 +33,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="风格333333" />
+        android:text="进取型（积极型）" />
 
     <Button
         android:id="@+id/bt3"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@drawable/image3" />
 
@@ -45,11 +45,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="风格44444" />
+        android:text="保守型" />
 
     <Button
         android:id="@+id/bt4"
         android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:background="@drawable/image4" />
 </LinearLayout>

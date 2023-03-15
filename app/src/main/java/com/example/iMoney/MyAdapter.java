@@ -12,7 +12,7 @@ import java.util.List;
 public class MyAdapter extends BaseAdapter {
 
     private List<Entry> data;//创建私有的Bean类的data
-    private Context context;
+    private final Context context;
 
     public MyAdapter(List<Entry> data, Context context) {
         this.data = data;

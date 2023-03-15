@@ -26,6 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     public EditText password;      //密码
     public static String username = "NULL";
     public static String pic_num = "NULL";
+    public static String style = "NULL";
     private static final String ipAddress = "39.106.139.86";
     //private static final String ipAddress = "10.130.22.101";
 
@@ -84,10 +85,12 @@ public class LoginActivity extends AppCompatActivity {
                         if (getStr.startsWith("YES")) {
                             String[] cmds = getStr.split("\\s+");
                             username = cmds[1];
+                            pic_num = cmds[2];
+                            style = cmds[3];
                             if (Objects.equals(username, "null")) {
                                 username = "用户" + phoneNum;
-                                Toast.makeText(getApplicationContext(), username, Toast.LENGTH_SHORT).show();
                             }
+                            Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_SHORT).show();
                             finish();
                         } else if (getStr.equals("NO")) {
                             Toast.makeText(getApplicationContext(), "登录失败", Toast.LENGTH_SHORT).show();

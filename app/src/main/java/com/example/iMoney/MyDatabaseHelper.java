@@ -1,27 +1,31 @@
 package com.example.iMoney;
 
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Objects;
 
 public class MyDatabaseHelper {
     //导入的sqlite数据库文件名
-    private final String DB_NAME = "knowledge.db";
+    private final String DB_NAME;
     private SQLiteDatabase myDatabase;
-    private Context context;
+    private final Context context;
 
     //定义类的方法
-    public MyDatabaseHelper(Context context) {
+    public MyDatabaseHelper(Context context, String dbname) {
+        DB_NAME = dbname;
         this.context = context;
     }
 
 
     // 复制和加载区域数据库中的数据
-    public String CopyDBFile() throws IOException {
+    public void CopyDBFile() throws IOException {
 
         // 在第一次运行应用程序时，加载数据库到data/data/当前包的名称/database/数据库名字
         //获取准确的路径,context.getPackageName()得到包名
@@ -43,7 +47,8 @@ public class MyDatabaseHelper {
                 //创建文件
                 file.createNewFile();
                 //加载文件
-                inputStream = context.getClass().getClassLoader().getResourceAsStream("assets/" + DB_NAME);
+                inputStream = Objects.requireNonNull(context.getClass().getClassLoader())
+                        .getResourceAsStream("assets/" + DB_NAME);
                 //输出到文件
                 outputStream = new FileOutputStream(file);
 
@@ -53,28 +58,19 @@ public class MyDatabaseHelper {
                 while ((len = inputStream.read(buffer)) != -1) {
                     outputStream.write(buffer, 0, len);
                 }
-
-
             } catch (IOException e) {
                 e.printStackTrace();
-
             } finally {
                 //关闭资源
                 if (outputStream != null) {
-
                     outputStream.flush();
                     outputStream.close();
-
                 }
                 if (inputStream != null) {
                     inputStream.close();
                 }
-
             }
-
         }
-
-        return file.getPath();
+        file.getPath();
     }
-
 }

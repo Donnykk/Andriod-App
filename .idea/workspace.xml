@@ -11,11 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2107ed67-8b4d-4ea3-9f61-ac983e924264" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,6 +33,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2BCshRhym80IS47LMAM0pF4ZyVh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -46,13 +53,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/Environment/Andriod/iMoneyServer&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Environment/ct_project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
@@ -130,7 +137,24 @@
       <workItem from="1663209919805" duration="19000" />
       <workItem from="1663237187491" duration="4741000" />
       <workItem from="1663381910693" duration="31000" />
-      <workItem from="1663488991515" duration="307000" />
+      <workItem from="1663488991515" duration="664000" />
+      <workItem from="1663591954217" duration="126000" />
+      <workItem from="1663592094081" duration="6000" />
+      <workItem from="1663639228229" duration="124000" />
+      <workItem from="1663642150892" duration="7000" />
+      <workItem from="1663683763060" duration="8000" />
+      <workItem from="1664707898261" duration="1494000" />
+      <workItem from="1664848963815" duration="4000" />
+      <workItem from="1664853693309" duration="8000" />
+      <workItem from="1664853838650" duration="20000" />
+      <workItem from="1667028301326" duration="1467000" />
+      <workItem from="1667031257931" duration="268000" />
+      <workItem from="1668046271243" duration="848000" />
+      <workItem from="1668053451892" duration="15000" />
+      <workItem from="1668089921280" duration="2323000" />
+      <workItem from="1668909220714" duration="10000" />
+      <workItem from="1678877322291" duration="348000" />
+      <workItem from="1678879559065" duration="4380000" />
     </task>
     <servers />
   </component>

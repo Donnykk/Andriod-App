@@ -1,10 +1,12 @@
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -106,6 +108,12 @@ public class MyServer {
                 case "ChangeName":
                     changeName(cmds);
                     break;
+                case "ChangePic":
+                    changePic(cmds);
+                    break;
+                case "ChangeStyle":
+                    changeStyle(cmds);
+                    break;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -126,7 +134,7 @@ public class MyServer {
         Date startTime = new Date();
         String startTimeSting = sdf.format(startTime);
         String s = "select * from userdata";// 调试信息
-        String insert = "insert into userdata(username,password,time,name,picture) " + "values('" + commands[0] + "','" + MD5(commands[1]) + "','" + startTimeSting + "', NULL, NULL)";
+        String insert = "insert into userdata(username,password,time,name,picture,style) " + "values('" + commands[0] + "','" + MD5(commands[1]) + "','" + startTimeSting + "', NULL, NULL, NULL)";
         if (masterDB.insertSQL(insert)) {
             System.out.println("insert successfully");
             ResultSet resultSet = masterDB.selectSQL(s);// 调试信息
@@ -141,6 +149,32 @@ public class MyServer {
         String s = "select * from userdata";// 调试信息
         String update = "update userdata set name = '" + commands[1] + "' where username = '" + commands[0] + "'";
         System.out.println(update);
+        if (masterDB.updateSQL(update)) {
+            System.out.println("change successfully");
+            ResultSet resultSet = masterDB.selectSQL(s);// 调试信息
+            masterDB.layoutStyle2(resultSet);// 调试信息
+        }
+        masterDB.deconnectSQL();// 关闭连接
+    }
+
+    private static void changePic(String[] commands) {
+        ServerDatabase masterDB = new ServerDatabase();
+        masterDB.connectSQL();
+        String s = "select * from userdata";// 调试信息
+        String update = "update userdata set pic = '" + commands[1] + "' where username = '" + commands[0] + "'";
+        if (masterDB.updateSQL(update)) {
+            System.out.println("change successfully");
+            ResultSet resultSet = masterDB.selectSQL(s);// 调试信息
+            masterDB.layoutStyle2(resultSet);// 调试信息
+        }
+        masterDB.deconnectSQL();// 关闭连接
+    }
+
+    private static void changeStyle(String[] commands) {
+        ServerDatabase masterDB = new ServerDatabase();
+        masterDB.connectSQL();
+        String s = "select * from userdata";// 调试信息
+        String update = "update userdata set style = '" + commands[1] + "' where username = '" + commands[0] + "'";
         if (masterDB.updateSQL(update)) {
             System.out.println("change successfully");
             ResultSet resultSet = masterDB.selectSQL(s);// 调试信息
@@ -178,8 +212,10 @@ public class MyServer {
                 OutputStream os = s1.getOutputStream();
                 DataOutputStream dos = new DataOutputStream(os);
                 String name = resultSet.getString(4);
-                System.out.println(name);
-                dos.writeUTF("YES " + name);
+                String pic_num = String.valueOf(resultSet.getInt(5));
+                String style = resultSet.getString(6);
+                System.out.println("YES " + name + " " + pic_num + " " + style);
+                dos.writeUTF("YES " + name + " " + pic_num + " " + style);
                 dos.close();
                 System.out.println("用户密码正确");// 调试信息
             }

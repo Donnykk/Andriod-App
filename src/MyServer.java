@@ -134,7 +134,7 @@ public class MyServer {
         Date startTime = new Date();
         String startTimeSting = sdf.format(startTime);
         String s = "select * from userdata";// 调试信息
-        String insert = "insert into userdata(username,password,time,name,picture,style) " + "values('" + commands[0] + "','" + MD5(commands[1]) + "','" + startTimeSting + "', NULL, NULL, NULL)";
+        String insert = "insert into userdata(username,password,time,name,pic,style) " + "values('" + commands[0] + "','" + MD5(commands[1]) + "','" + startTimeSting + "', NULL, NULL, NULL)";
         if (masterDB.insertSQL(insert)) {
             System.out.println("insert successfully");
             ResultSet resultSet = masterDB.selectSQL(s);// 调试信息

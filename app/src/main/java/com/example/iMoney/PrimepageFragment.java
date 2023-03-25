@@ -1,6 +1,7 @@
 package com.example.iMoney;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,6 +50,13 @@ public class PrimepageFragment extends Fragment {
         bt5.setOnClickListener(v -> {
             Navigation.findNavController(requireView()).navigate(R.id.toNewsE);
         });
+
+        Button btvideo = binding.video;
+        btvideo.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), VideoActivity.class);
+            startActivity(intent);
+        });
+
         return binding.getRoot();
     }
 

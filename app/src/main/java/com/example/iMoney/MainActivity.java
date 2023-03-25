@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         com.example.iMoney.databinding.ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         Objects.requireNonNull(this.getSupportActionBar()).hide();
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(

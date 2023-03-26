@@ -16,18 +16,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="菜菜i财"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.iMoney">
         <activity
             android:name="com.example.iMoney.MainActivity"
             android:exported="true"
             android:label="iMoney"
-            android:screenOrientation="portrait"
-            >
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,18 +36,17 @@
 
         <activity
             android:name="com.example.iMoney.Test.TestActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name="com.example.iMoney.LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name="com.example.iMoney.Register"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name="com.example.iMoney.VideoActivity"
-            android:theme="@style/AppTheme.Video"
             android:screenOrientation="landscape"
-            />
+            android:theme="@style/AppTheme.Video" />
     </application>
 
 </manifest>
